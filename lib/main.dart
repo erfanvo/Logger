@@ -167,7 +167,7 @@ class _DigikalaViewerScreenState extends State<DigikalaViewerScreen> {
             });
           });
         }
-        return rawSend.apply(this, arguments);
+        return origSend.apply(this, arguments);
       };
     })();
   """;
@@ -286,7 +286,7 @@ class _DigikalaViewerScreenState extends State<DigikalaViewerScreen> {
           children: [
             const Text(
               'دیجی‌کالا اسنیفر',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black82),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black87),
             ),
             Text(
               'لاگ‌های ذخیره شده: $_capturedRequestsCount',
@@ -306,7 +306,7 @@ class _DigikalaViewerScreenState extends State<DigikalaViewerScreen> {
             onPressed: _clearLogs,
           ),
           IconButton(
-            icon: const Icon(Icons.refresh, color: Colors.black82),
+            icon: const Icon(Icons.refresh, color: Colors.black87),
             tooltip: 'بارگذاری مجدد صفحه',
             onPressed: () => _controller.reload(),
           ),
